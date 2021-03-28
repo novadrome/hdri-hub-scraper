@@ -9,7 +9,6 @@
   "author": "novadrome",
   "license": "ISC",
   "dependencies": {
-    "form-data": "^4.0.0",
     "fs": "0.0.1-security",
     "got": "^11.8.2",
     "request": "^2.88.2"
