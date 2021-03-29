@@ -2,11 +2,12 @@ const request = require('request');
 const fs = require('fs');
 const got = require('got');
 
+if(!process.argv[2]) return console.log(`------------------------\n
+Missing third argument: Please paste the link to the page of the HDRI you want to scrape!\n
+<<<EXAMPLE>>> node index.js https://www.hdri-hub.com/hdrishop/hdri/space/item/762-hdr-180-5-space-sky-and-stars\n
+------------------------`);
 
-//Place the link to the page of the HDRI you want to grab :)
-let inputlink = "https://www.hdri-hub.com/hdrishop/hdri/space/item/762-hdr-180-5-space-sky-and-stars";
-//Place the link to the page of the HDRI you want to grab :)
-
+let inputlink = process.argv[2];
 
 let link;
 
